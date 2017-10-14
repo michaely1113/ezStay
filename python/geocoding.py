@@ -1,6 +1,8 @@
+from tokens import GOOGLEMAPS_KEY
 import googlemaps
 
-gmaps = googlemaps.Client(key='AIzaSyAGQh741SvVZndL19xOcQx-fVY9YuuEjuQ')
+
+gmaps = googlemaps.Client(key=GOOGLEMAPS_KEY)
 
 # geocoding an address
 geocoded_address = gmaps.geocode('315 NE Campus Pkwy, Seattle, WA ')
