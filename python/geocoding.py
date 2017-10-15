@@ -1,5 +1,5 @@
 from tokens import GOOGLEMAPS_KEY
-#import scraper
+import scraper
 import googlemaps
 import json
 import requests
