@@ -6,12 +6,12 @@ import urllib.request as request
 def getFlightInfo(flightNumber, date):
     API_endpoint = "https://demo30-test.apigee.net/v1/hack/status?flightNumber=%s&flightOriginDate=%s&apikey=ZINxBqol4GEAB9L1T25ZcFyG9vmapoLW"
     url = API_endpoint % (flightNumber, date)
-    return request.urlopen(url).read()
+    return json.loads(request.urlopen(url).read())
 
 def getDestination(flightNumber, date):
-    response = json.loads(getFlightInfo(flightNumber, date))
+    response = getFlightInfo(flightNumber, date)
     return response['flightStatusResponse']['statusResponse']['flightStatusTO']['flightStatusLegTOList']["arrivalCityName"]
 
 def getArrivalTime(flightNumber, date):
-    response = json.loads(getFlightInfo(flightNumber, date))
+    response = getFlightInfo(flightNumber, date)
     return response['flightStatusResponse']['statusResponse']['flightStatusTO']['flightStatusLegTOList']['arrivalLocalTimeScheduled']
