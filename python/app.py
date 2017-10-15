@@ -17,6 +17,15 @@ def getEventData():
         return render_template('checkboxHTML.html')
         # maybe return eventData in json form as a response
 
+@app.route('/airbnb', methods=['GET', 'POST'])
+def getAirbnbLink():
+    return render_template('Link.html')
+    if request.method == 'POST':
+        return render_template('Link.html')
+        # maybe return eventData in json form as a response
+
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
