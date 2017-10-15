@@ -7,10 +7,14 @@ h4 {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.funkyradio div {
+.funkyradio {
+  max-height: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
   align-items: center;
   clear: both;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 .funkyradio label {
