@@ -1,11 +1,5 @@
-from flask import Flask
-app = Flask(__name__)
 import json
 import urllib2 as request
-
-@app.route('/test')
-def hello_world():
-    return getDestination('800', '2017-10-10')
 
 # 4 digit flightNumber
 # date in YYYY-MM-DD format
