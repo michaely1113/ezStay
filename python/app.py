@@ -14,7 +14,7 @@ def getEventData():
         arrivalTime = flightinfo.getArrivalTime(flightNumber, date)
 
         eventData = scraper.returnResult() # use destination when we get API access for tripadvisor
-        return eventData
+        return render_template('checkboxHTML.html')
         # maybe return eventData in json form as a response
 
 @app.route('/')
