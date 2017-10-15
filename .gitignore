@@ -3,3 +3,4 @@ tokens.py
 .idea/
 *.pyc
 flightinfo.py
+python/flightinfo.py
