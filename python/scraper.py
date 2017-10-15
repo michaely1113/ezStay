@@ -61,3 +61,5 @@ for i in range(0, toReturn.names.__len__()):
 
 def returnResult():
     return toReturn
+
+print(toReturn.names)
