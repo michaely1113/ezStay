@@ -1,5 +1,5 @@
 import json
-import urllib.request as request
+import urllib2 as request
 
 # 4 digit flightNumber
 # date in YYYY-MM-DD format

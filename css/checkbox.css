@@ -1,13 +1,23 @@
+h4 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
 .funkyradio div {
+  align-items: center;
   clear: both;
   overflow: hidden;
 }
 
 .funkyradio label {
-  width: 100%;
-  border-radius: 3px;
-  border: 1px solid #D1D3D4;
+  display: block;
+  width: 25%;
   font-weight: normal;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .funkyradio input[type="radio"]:empty,
@@ -17,10 +27,11 @@
 
 .funkyradio input[type="radio"]:empty ~ label,
 .funkyradio input[type="checkbox"]:empty ~ label {
+  align-self: center;
   position: relative;
   line-height: 2.5em;
   text-indent: 3.25em;
-  margin-top: .5em;
+  margin-top: 1em;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -31,26 +42,27 @@
 .funkyradio input[type="radio"]:empty ~ label:before,
 .funkyradio input[type="checkbox"]:empty ~ label:before {
   position: absolute;
-  display: block;
+  border-radius: 50%;
   top: 0;
   bottom: 0;
   left: 0;
   content: '';
   width: 2.5em;
-  background: #D1D3D4;
-  border-radius: 3px 0 0 3px;
+  height: 2.5em;
+  background-color: #f05f40;
+
 }
 
 .funkyradio input[type="radio"]:hover:not(:checked) ~ label,
 .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
-  color: #888;
+  color: #000000;
 }
 
 .funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
 .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
   content: '\2714';
-  text-indent: .9em;
-  color: #C2C2C2;
+  text-indent: 0em;
+  color: #ffffff;
 }
 
 .funkyradio input[type="radio"]:checked ~ label,
@@ -61,9 +73,9 @@
 .funkyradio input[type="radio"]:checked ~ label:before,
 .funkyradio input[type="checkbox"]:checked ~ label:before {
   content: '\2714';
-  text-indent: .9em;
-  color: #333;
-  background-color: #ccc;
+  text-indent: 0em;
+  margin-bottom: 10px;
+  color: #000000;
 }
 
 .funkyradio input[type="radio"]:focus ~ label:before,
@@ -73,14 +85,14 @@
 
 .funkyradio-default input[type="radio"]:checked ~ label:before,
 .funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
   color: #ffffff;
-  background-color: #f05f40;
+  background-color: #C0C0C0;
 }
 
-.funkyradio-info input[type="radio"]:checked ~ label:before,
-.funkyradio-info input[type="checkbox"]:checked ~ label:before {
-  color: #fff;
-  background-color: #5bc0de;
-}
+
+
+
+
 
 
