@@ -19,6 +19,12 @@ hr {
 hr.light {
   border-color: white; }
 
+  input[type=text] {
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      color: #F05F40;
+      background-color: white;
+  }
+
 a {
   color: #ffffff;
   font-size: 30px;
