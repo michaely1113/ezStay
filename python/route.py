@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import request
+from flask import render_template
 import googlemaps
 import flightinfo
 import scraper
@@ -17,5 +18,11 @@ def getEventData():
         eventData = scraper.returnResult() # use destination when we get API access for tripadvisor
         return eventData
         # maybe return eventData in json form as a response
-    else:
-        # do nothing for a GET request
+        
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+
+if __name__ == '__main__':
+    app.run()
