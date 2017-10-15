@@ -1,7 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 import json
-import urllib2 as request
+import urllib.request as request
 
 @app.route('/test')
 def hello_world():
