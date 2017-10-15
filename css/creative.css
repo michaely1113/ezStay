@@ -20,7 +20,8 @@ hr.light {
   border-color: white; }
 
 a {
-  color: #F05F40;
+  color: #ffffff;
+  font-size: 30px;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
