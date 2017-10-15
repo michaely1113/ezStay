@@ -1,9 +1,7 @@
-from flask import Flask
-from flask import request
-from flask import render_template
+from flask import Flask, request, render_template
 import googlemaps
-import flightinfo
-import scraper
+from python import scraper
+from python import flightinfo
 app = Flask(__name__)
 
 # after user presses submit, sending post request with flight details
@@ -18,7 +16,7 @@ def getEventData():
         eventData = scraper.returnResult() # use destination when we get API access for tripadvisor
         return eventData
         # maybe return eventData in json form as a response
-        
+
 @app.route('/')
 def index():
     return render_template('index.html')
