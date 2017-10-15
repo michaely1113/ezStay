@@ -9,8 +9,6 @@ h4 {
 
 .funkyradio {
   max-height: 500px;
-  margin-left: 200px;
-  margin-right: 200px;
   align-items: center;
   clear: both;
   overflow: hidden;
@@ -64,8 +62,7 @@ h4 {
 
 .funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
 .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
-  content: '\2714';
-  text-indent: 0em;
+  text-indent: 0.8em;
   color: #ffffff;
 }
 
@@ -76,8 +73,7 @@ h4 {
 
 .funkyradio input[type="radio"]:checked ~ label:before,
 .funkyradio input[type="checkbox"]:checked ~ label:before {
-  content: '\2714';
-  text-indent: 0em;
+  text-indent: 0.8em;
   margin-bottom: 10px;
   color: #000000;
 }
@@ -89,7 +85,6 @@ h4 {
 
 .funkyradio-default input[type="radio"]:checked ~ label:before,
 .funkyradio-default input[type="checkbox"]:checked ~ label:before {
-  content: '\2714';
   color: #ffffff;
   background-color: #C0C0C0;
 }
