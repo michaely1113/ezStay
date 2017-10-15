@@ -166,13 +166,14 @@ body {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #F05F40; } }
 
+
 header.masthead {
   position: relative;
   width: 100%;
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: "header.jpg";
+  background-image: url({{ url_for('styles', filename='css/header.jpg') }})
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
