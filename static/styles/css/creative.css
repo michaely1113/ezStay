@@ -19,8 +19,25 @@ hr {
 hr.light {
   border-color: white; }
 
+  input[type=text] {
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      color: #F05F40;
+      background-color: white;
+  }
+
+  input[type=submit]{
+    background-color: #F05F40;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 a {
-  color: #F05F40;
+  color: #ffffff;
+  font-size: 30px;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
@@ -35,10 +52,18 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
+  #linkdescript{
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: white;
+  }
+
 p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px; }
+
 
 .bg-primary {
   background-color: #F05F40 !important; }

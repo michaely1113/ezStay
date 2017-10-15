@@ -2,3 +2,4 @@ tokens.py
 .DS_Store
 .idea/
 *.pyc
+flightinfo.py
