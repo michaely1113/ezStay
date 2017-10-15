@@ -2,30 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" link href="{{ url_for('static', filename='styles/reset.css') }}">
-=======
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" link href="{{ url_for('static', filename='styles/bootstrap/css/bootstrap.css') }}">
 
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" type="text/css" link href="{{ url_for('static', filename='styles/font-awesome/css/font-awesome.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" type="text/css" link href="{{ url_for('static', filename='styles/magnific-popup/magnific-popup.css') }}">
-
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" link href="{{ url_for('static', filename='styles/creative.css') }}">
->>>>>>> b0f6d08e6a9e9da887f1d2e044b27705bb89dcad
+
     <link rel="stylesheet" type="text/css" link href="{{ url_for('static', filename='styles/checkbox.css') }}">
 </head>
 <body>
 <div class="col-md-4">
 <div class="col-md-6">
   <h4>Choose Your Top Attractions</h4>
-      <div class="funkyradio" align-items="center" style="margin-left: 550px; margin-right: 0px";>
+      <div class="funkyradio" align-items="center" style="margin-left: 400px; margin-right: 400px";>
         <div class="funkyradio-default">
             <input type="checkbox" name="checkbox" id="checkbox1" checked/>
             <label for="checkbox1">Georgia Aquarium</label>
@@ -51,46 +43,34 @@
             <label for="checkbox6">Piedmont Park</label>
         </div>
         <div class="funkyradio-default">
-            <input type="checkbox" name="checkbox" id="checkbox6" checked/>
-            <label for="checkbox6">Atlanta History Center</label>
+            <input type="checkbox" name="checkbox" id="checkbox7" checked/>
+            <label for="checkbox7">Atlanta History Center</label>
         </div>
         <div class="funkyradio-default">
-            <input type="checkbox" name="checkbox" id="checkbox6" checked/>
-            <label for="checkbox6">Oakland Cemetery</label>
+            <input type="checkbox" name="checkbox" id="checkbox8" checked/>
+            <label for="checkbox8">Oakland Cemetery</label>
         </div>
         <div class="funkyradio-default">
-            <input type="checkbox" name="checkbox" id="checkbox6" checked/>
-            <label for="checkbox6">High Museum of Art</label>
+            <input type="checkbox" name="checkbox" id="checkbox9" checked/>
+            <label for="checkbox9">High Museum of Art</label>
         </div>
         <div class="funkyradio-default">
-            <input type="checkbox" name="checkbox" id="checkbox6" checked/>
-            <label for="checkbox6">Swan_House</label>
+            <input type="checkbox" name="checkbox" id="checkbox10" checked/>
+            <label for="checkbox10">Swan House</label>
         </div>
         <div class="funkyradio-default">
-            <input type="checkbox" name="checkbox" id="checkbox6" checked/>
-            <label for="checkbox6">Ebenezer Baptist Church of Atlanta</label>
+            <input type="checkbox" name="checkbox" id="checkbox11" checked/>
+            <label for="checkbox11">Ebenezer Baptist Church of Atlanta</label>
         </div>
         <div class="funkyradio-default">
-            <input type="checkbox" name="checkbox" id="checkbox6" checked/>
-            <label for="checkbox6">College_Football_Hall_of_Fame</label>
+            <input type="checkbox" name="checkbox" id="checkbox12" checked/>
+            <label for="checkbox12">College Football Hall of Fame</label>
         </div>
     </div>
-    <form action="http://localhost:5000/airbnb" method="POST">
-      <input type="submit" class="btn btn-primary btn-xl js-scroll-trigger" value="Submit">
+    <form action="https://www.airbnb.com/s/517-563-Piedmont-Ave-NE--Atlanta--GA-30308/homes?allow_override%5B%5D=&s_tag=qzlTCwVu">
+      <input type="submit" class="btn btn-primary btn-xl js-scroll-trigger" value="Submit" style="margin-left: 650px" href="https://www.airbnb.com/s/517-563-Piedmont-Ave-NE--Atlanta--GA-30308--USA/homes?allow_override%5B%5D=&s_tag=GmQMI4fC">
     </form>
 </div>
 
-<script src="{{ url_for('static', filename='styles/jquery/jquery.min.js') }}"></script>
-<script src="{{ url_for('static', filename='styles/popper/popper.min.js') }}"></script>
-<script src="{{ url_for('static', filename='styles/bootstrap/js/bootstrap.min.js') }}"></script>
-
-
-
-    <script src="{{ url_for('static', filename='styles/jquery-easing/jquery.easing.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='styles/scrollreveal/scrollreveal.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='styles/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
-
-
-    <script src="{{ url_for('static', filename='styles/js/creative.min.js') }}"></script>
 </body>
 </html>

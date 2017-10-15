@@ -11,8 +11,10 @@ gmaps = googlemaps.Client(key=GOOGLEMAPS_KEY)
 def getGeocodedEvents():
     # addressesOfEvents = scraper.getAddressesOfEvents()   #TODO COMMENT OUT NEXT THREE LINES
     addressesOfEvents = []
-    addressesOfEvents.append('315 NE Campus Pkwy, Seattle, WA')
-    addressesOfEvents.append('5015 16th Ave NE, Seattle, WA')
+    addressesOfEvents.append('225 Baker St, Atlanta, GA')
+    addressesOfEvents.append('660 Peachtree St NE, Atlanta, GA')
+    addressesOfEvents.append('1345 Piedmont Ave NE, Atlanta, GA')
+    addressesOfEvents.append('248 Oakland Ave SE, Atlanta, GA')
     geocodedEvents = []
     for address in addressesOfEvents:
         geocodedEvents.append(gmaps.geocode(address))

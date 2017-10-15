@@ -1,6 +1,7 @@
 h4 {
+  color: #ffffff;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 25px;
   font-weight: normal;
@@ -8,7 +9,9 @@ h4 {
 }
 
 .funkyradio {
-  max-height: 500px;
+  background-color: #ffffff;
+  max-height: 400px;
+
   align-items: center;
   clear: both;
   overflow: hidden;
@@ -29,6 +32,7 @@ h4 {
 
 .funkyradio input[type="radio"]:empty ~ label,
 .funkyradio input[type="checkbox"]:empty ~ label {
+  margin-left: 100px;
   align-self: center;
   position: relative;
   line-height: 2.5em;
@@ -69,6 +73,7 @@ h4 {
 .funkyradio input[type="radio"]:checked ~ label,
 .funkyradio input[type="checkbox"]:checked ~ label {
   color: #000000;
+  margin-left: 100px;
 }
 
 .funkyradio input[type="radio"]:checked ~ label:before,

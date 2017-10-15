@@ -6,13 +6,13 @@
 body {
      margin:0;
      padding:0;
-     background:url("https://static.vecteezy.com/system/resources/previews/000/106/719/original/vector-abstract-blue-wave-background.jpg") no-repeat center center fixed;
+     background:url("https://oboitut.com/uploads/posts/oboitut.com_493.jpg") no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
  }
- 
+
 html {
   width: 100%;
   height: 100%; }
@@ -42,6 +42,7 @@ hr.light {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    align-self: center;
 }
 
 a {
